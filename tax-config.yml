@@ -1,0 +1,21 @@
+# gitjonez/tax configuration file
+
+tax_year: 2020
+
+## plug-ins
+
+# Morgan Stanley
+# e.g. MS2020_all_activity.csv
+morgan_stanley: 
+  - abbv:   "MS"
+  - suffix: "_all_activity.csv"
+
+# E*Trade
+# eTrade2020_all_activity.csv
+e_trade:
+  - abbv:   "eTrade"
+  - suffix: "_all_activity.csv"
+
+## defaults
+paths: 
+  - data: "data"
