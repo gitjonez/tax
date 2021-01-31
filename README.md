@@ -3,7 +3,7 @@ Code to read account transactions and unify for analysis
 
 ## Download Transactions
 - Morgan Stanley
-- E*trade
+- E*Trade
 - Citibank
 - Bank of America
 
