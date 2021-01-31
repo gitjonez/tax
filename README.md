@@ -1,19 +1,17 @@
-# README.md
-- Location ceres-v2-test-suites/milestone-03/spc/ec2
-- Some notes, documentation, and help for https://github.com/cloud-pi/ceres-v2-test-suites
+# Tax Pipeline
+Code to read account transactions and unify for analysis
 
-## Environment
-- `bash` scripts for components (ansible, terraform) use vars set in `.envrc`
-  - Example: `AWS_DEFAULT_REGION="eu-central-1"` is used in 
-- Some vars aren't defined so I think these should be should be set manually before sourcing `.envrc`
+## Download Transactions
+- Morgan Stanley
+- E*trade
+- Citibank
+- Bank of America
 
-## BASH
-Some notes about "new-to-me" things
+## Requirements
+- Python 3.8
+- Pandas 1.2
 
-### set option `pipefail`
-`set -o pipefail` This setting prevents errors in a pipeline from being masked.
-If any command in a pipeline fails, that return code will be used as the return code of the whole pipeline.
-By default, the pipeline's return code is that of the last command - even if it succeeds.
-
-
-# tax
+## Notes
+Difficulty with `.xlsx` files.
+Since the data are small, open in Google Docs, export as `CSV`
+  prior to processing
